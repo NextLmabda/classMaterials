@@ -1,0 +1,33 @@
+I am going to school tomorrow
+      and I will branch at Shola's House
+      Ask Question
+Asked 2 years, 1 month ago
+Active 2 years, 1 month ago
+Viewed 3k times
+
+1
+
+
+1
+I have the following data frame:
+
+Date     Value1   Value2
+01-01-01     01       01
+02-01-01     02       00
+03-01-01     03       01
+04-01-01     04      101
+On this data frame I would like to select just the rows having Value2==0 and Value2>=100
+
+For that, I use the following command:
+
+data.loc[(data['Value2'] == 0) & (data['Value2'] >= 100)]
+Which return me an empty DataFrame. I don't really understand why because when I used separately:
+
+data.loc[(data['Value2'] == 0)]
+or:
+
+data.loc[(data['Value2'] >= 100)
+It returns the corrected values. Does anyone knows how to implement this 2 conditions selection?
+
+python pandas loc
+share  improve this question  follow 
