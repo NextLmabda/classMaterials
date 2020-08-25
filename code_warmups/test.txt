@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+Hello world!
+=======
+Hi I love statistics
+>>>>>>> 47e72c20bd6e46215f67a45378309c17134f2b5b
