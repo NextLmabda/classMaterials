@@ -1,0 +1,2 @@
+chichi=
+print("the "+ chichi )
