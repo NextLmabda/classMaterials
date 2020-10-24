@@ -53,6 +53,7 @@ class Embedding:
         self.n_dim = n_dim
         self.le = LabelEncoder()
         self.column_name = column_name
+        self.sc = StandardScaler()
         
     def create(self):
         encode = self.le.fit(self.lis)
@@ -72,5 +73,6 @@ class Embedding:
             for i in range(self.n_dim):
                 df_dict[columns[i]] = x[0][i]
             df = df.append(df_dict, ignore_index = True)
+            #df = self.sc.fit_transform(df)
 
         return df

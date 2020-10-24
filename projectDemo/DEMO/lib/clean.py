@@ -8,7 +8,7 @@ def clean_dataframe(df):
     :return: DataFrame
     '''
     changedCol = []
-
+    
     for col in df.columns:
         changedCol.append(col.capitalize())
 
@@ -19,6 +19,7 @@ def clean_dataframe(df):
     df = df.replace(" ", np.nan)
     #df = df[df['Totalcharges'].notnull()]
     df = df[df.notnull()]
+    
 
     # Change the Totalcharges column to float type
     df = df.reset_index()[df.columns]
@@ -35,7 +36,7 @@ def clean_dataframe(df):
 
     # Convert Churn from 'Yes/ NO' to 'Churn/Not Churn'
     # df['Churn'] = df['Churn'].replace({'No': 'Not Churn', 'Yes': 'Churn'})
-
+    
     return df
 
 def group_tenure(df):
