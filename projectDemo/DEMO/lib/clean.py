@@ -55,3 +55,15 @@ def group_tenure(df):
     df['CreatedTenure'] = df['Tenure'].apply(transform)
     return df
 
+def transform(inp):
+    if inp <= 12:
+        return 'One_Year'
+    elif inp <= 24:
+        return 'Two_Year'
+    elif inp <= 48:
+        return 'Three_Year'
+    elif inp <= 60:
+        return 'Four_Year'
+    else:
+        return 'Five_Year'
+
