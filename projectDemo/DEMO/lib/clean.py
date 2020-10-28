@@ -16,7 +16,7 @@ def clean_dataframe(df):
 
     # Remove the missing values from Totalcharges column
     #df['Totalcharges'] = df['Totalcharges'].replace(" ", np.nan)
-    df = df.replace(" ", np.nan)
+    #df = df.replace(" ", np.nan)
     #df = df[df['Totalcharges'].notnull()]
     df = df[df.notnull()]
     
