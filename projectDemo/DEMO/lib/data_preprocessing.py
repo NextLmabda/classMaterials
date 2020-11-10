@@ -34,6 +34,7 @@ class PreProcessing(pd.DataFrame):
     def OHE(self):
         ''' Docstring'''
         self.df = pd.get_dummies(self.df, columns = self.bin_cols)
+        return self.df
 
     def return_df(self):
         return self.df
@@ -75,4 +76,4 @@ class Embedding:
             df = df.append(df_dict, ignore_index = True)
             #df = self.sc.fit_transform(df)
 
-        return df
+        return df 
