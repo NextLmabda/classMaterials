@@ -76,4 +76,4 @@ class Embedding:
             df = df.append(df_dict, ignore_index = True)
             #df = self.sc.fit_transform(df)
 
-        return df 
+        return df
